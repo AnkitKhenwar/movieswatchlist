@@ -34,7 +34,7 @@ const Main = ({ moviesdata, isLoading, error }) => {
 
   //  setIsLoading(true);
   async function getMovieDetails(id) {
-    const res = await fetch(`http://www.omdbapi.com/?apikey=${KEY}&i=${id}`);
+    const res = await fetch(`https://www.omdbapi.com/?apikey=${KEY}&i=${id}`);
     const data = await res.json();
     console.log(data);
     setShowMovie([data]);
